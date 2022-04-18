@@ -1,2 +1,2 @@
 # webAPIwithSQL
-WebAPI with Sql(ef core)+Angular
+Webapi with sql(ef core) + Angular
