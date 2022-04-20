@@ -13,11 +13,11 @@ namespace webapi_sql_.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StatusController : ControllerBase
+    public class StatusesController : ControllerBase
     {
         private readonly DataContext _context;
 
-        public StatusController(DataContext context)
+        public StatusesController(DataContext context)
         {
             _context = context;
         }
