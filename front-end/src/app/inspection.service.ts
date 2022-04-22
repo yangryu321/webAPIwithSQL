@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class InspectionService {
 
-  private readonly inspectionAPIUrl = "";
+  readonly inspectionAPIUrl = "https://localhost:7070/api";
 
   constructor(private http:HttpClient) { }
 
@@ -17,40 +17,45 @@ export class InspectionService {
     return this.http.get<any>(this.inspectionAPIUrl + '/Inspections');
   }
 
-  addInspecstion(data:any):Observable<any[]>
+  getInspectionById(id:string|number)
   {
-    return this.http.post<any>(this.inspectionAPIUrl + '/Inspections/', data);
+    return this.http.get(this.inspectionAPIUrl + `/Inspections/${id}`);  
   }
 
-  updateInspection(data:any, id:number|string):Observable<any[]>
+  addInspecstion(data:any)
   {
-    return this.http.put<any>(this.inspectionAPIUrl + '/Inspections/${id}', data)
+    return this.http.post(this.inspectionAPIUrl + '/Inspections/', data);
+  }
+
+  updateInspection(id:number|string, data:any)
+  {
+    return this.http.put(this.inspectionAPIUrl + `/Inspections/${id}`, data)
   }
 
   deleteInspection(id:number|string)
   {
-    return this.http.delete<any>(this.inspectionAPIUrl + 'Inspections/#{id}');
+    return this.http.delete(this.inspectionAPIUrl+`/Inspections/${id}`);
   }
 
   //status CRUD
   getAllStatuses():Observable<any[]>
   {
-    return this.http.get<any>(this.inspectionAPIUrl + '/Status');
+    return this.http.get<any>(this.inspectionAPIUrl + '/Statuses');
   }
 
-  addStatus(data:any):Observable<any[]>
+  addStatus(data:any)
   {
-    return this.http.post<any>(this.inspectionAPIUrl + '/Statuses', data);
+    return this.http.post(this.inspectionAPIUrl + '/Statuses', data);
   }
 
-  updateStatus(data:any, id:number|string):Observable<any[]>
+  updateStatus(data:any, id:number|string)
   {
-    return this.http.put<any>(this.inspectionAPIUrl + '/Statuses/${id}', data)
+    return this.http.put(this.inspectionAPIUrl + '/Statuses/${id}', data)
   }
 
   deleteStatus(id:number|string)
   {
-    return this.http.delete<any>(this.inspectionAPIUrl + 'Statuses/#{id}');
+    return this.http.delete(this.inspectionAPIUrl + 'Statuses/${id}');
   }
 
   //inspectiontype CRUD
@@ -61,19 +66,19 @@ export class InspectionService {
     return this.http.get<any>(this.inspectionAPIUrl + '/InspectionTypes');
   }
 
-  addInspectionType(data:any):Observable<any[]>
+  addInspectionType(data:any)
   {
-    return this.http.post<any>(this.inspectionAPIUrl + '/InspectionTypes', data);
+    return this.http.post(this.inspectionAPIUrl + '/InspectionTypes', data);
   }
 
-  updateInspectionType(data:any, id:number|string):Observable<any[]>
+  updateInspectionType(data:any, id:number|string)
   {
-    return this.http.put<any>(this.inspectionAPIUrl + '/InspectionTypes/${id}', data)
+    return this.http.put(this.inspectionAPIUrl + `/InspectionTypes/${id}`, data)
   }
 
   deleteInspectionType(id:number|string)
   {
-    return this.http.delete<any>(this.inspectionAPIUrl + 'InspectionTypes/#{id}');
+    return this.http.delete(this.inspectionAPIUrl + `InspectionTypes/${id}`);
   }
 
   
