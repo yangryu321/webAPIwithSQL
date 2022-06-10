@@ -1,5 +1,5 @@
-# webAPIwithSQL
-WebAPI with sql(ef core) + Angular 13
+# Inspection app
+Angular 13 + asp.net core webAPI
 
 <br>
 <br>
