@@ -28,7 +28,7 @@ Tools I used to build the website: </br>
 <br>
 
 ## What I learned 
-###*About Angular* : 
+### *About Angular* : 
 First time using a JavaScript frontend framework. Learning TypeScript is actually pretty fun.<br/> 
 The syntax is not quite the same as c# or other c based language that I know but it's pretty <br/> 
 powerful with the components structure with Angular. It is actually not that different from the<br/> 
@@ -36,16 +36,16 @@ asp.net core front end, they both have a layout page, and it renders your page t
 page, the only thing is it's called "index.html" in Angular but layout.cshtml in asp.net core. But I do feel <br/>
 Angular is more powerful when it comes to frontend development with all the features supported.
 
-###*About asp.net core webAPI* :
+### *About asp.net core webAPI* :
 After learning MVC, it's pretty easy to understand what is going on with webapi. For example the <br/> 
 middleware setup and routing. It's very lightweight, even lighter with minimalAPI, and only write <br/> 
 what you need. Just don't forget to enable cors to use it with other frameworks.<br/>
 
 
 ## Epilogue
-The project is not being hosted yet because I think it needs more features. For example a login system and more pages as it is a single <br/>
-page app at the moment. About hosting, I'm thinking about using Docker as I'm really interested in Docker recently. Maybe Docker on Azure<br/>
-for the hosting. 
+The project is not being hosted yet because I think it needs more features. For example a login system<br/> 
+and more pages as it is a single page app at the moment. About hosting, I'm thinking about using Docker<br/> 
+as I'm really interested in Docker recently. Maybe Docker on Azure for the hosting. 
 
 
 <br>
