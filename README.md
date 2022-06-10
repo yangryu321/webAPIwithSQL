@@ -28,16 +28,18 @@ Tools I used to build the website: </br>
 <br>
 
 ## What I learned 
-*About Angular* : First time using a JavaScript frontend framework. Learning TypeScript is actually pretty fun. The syntax is not <br/> 
-quite the same as c# or other c based language that I know but it's pretty powerful with the components structure with Angular. <br/>
-It is actually not that different from the asp.net core front end, they both have a layout page, and it renders your<br/>
-page to that layout page, the only thing is it's called "index.html" in Angular but layout.cshtml in asp.net core. But I do feel <br/>
+###*About Angular* : 
+First time using a JavaScript frontend framework. Learning TypeScript is actually pretty fun.<br/> 
+The syntax is not quite the same as c# or other c based language that I know but it's pretty <br/> 
+powerful with the components structure with Angular. It is actually not that different from the<br/> 
+asp.net core front end, they both have a layout page, and it renders your page to that layout <br/> 
+page, the only thing is it's called "index.html" in Angular but layout.cshtml in asp.net core. But I do feel <br/>
 Angular is more powerful when it comes to frontend development with all the features supported.
 
-*About asp.net core webAPI* :
-After learning MVC, it's pretty easy to understand what is going on with webapi. For example the middleware setup and routing.<br/>
-It's very lightweight, even lighter with minimalAPI, and only write what you need. Just don't forget to enable cors to use it <br/>
-with other frameworks.<br/>
+###*About asp.net core webAPI* :
+After learning MVC, it's pretty easy to understand what is going on with webapi. For example the <br/> 
+middleware setup and routing. It's very lightweight, even lighter with minimalAPI, and only write <br/> 
+what you need. Just don't forget to enable cors to use it with other frameworks.<br/>
 
 
 ## Epilogue
